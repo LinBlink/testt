@@ -1,0 +1,6 @@
+{
+    "java.project.sourcePaths": [
+        "learning_points/volatile_sync",
+        "src/learning_points/volatile_sync"
+    ]
+}

@@ -1,5 +1,8 @@
 public class Course01 {
+    
+    private volatile boolean running = true;
+    
     public static void main (String[]args ){
-        System.out.println("HL");
+
     }
 }
