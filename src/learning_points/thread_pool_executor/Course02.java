@@ -1,4 +1,4 @@
-package learning_points.threadPoolExecutor;
+package learning_points.thread_pool_executor;
 
 /**
  * @description:

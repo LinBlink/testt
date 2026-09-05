@@ -1,4 +1,4 @@
-package learning_points.BFS.n001二叉树的层序遍历;
+package learning_points.bfs.n001_binary_tree_level_order_traversal;
 
 import java.util.List;
 

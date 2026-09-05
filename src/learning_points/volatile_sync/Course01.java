@@ -1,3 +1,5 @@
+package learning_points.volatile_sync;
+
 public class Course01 {
     
     private volatile boolean running = true;
