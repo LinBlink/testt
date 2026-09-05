@@ -27,12 +27,12 @@ C 可以放在 D (500) 和 M (1000) 的左边，来表示 400 和 900。
     public static void main(String[] args) {
         
         System.out.println("简单测试");
-        int result = mymethod1( "V" );
+        int result = mymethod1( "IX" );
         System.out.println( result );
 
-        // System.out.println("复杂测试");
-        // result = mymethod1( "MCMXCIV" );
-        // System.out.println( result );
+        System.out.println("复杂测试");
+        result = mymethod1( "DCXXI" );
+        System.out.println( result );
         
     }
     
@@ -49,34 +49,31 @@ C 可以放在 D (500) 和 M (1000) 的左边，来表示 400 和 900。
 
             switch (c) {
                 case 'I':
-
                     value = 1;
-
                     if( i+1 < s.length() ){
                         // 必须符合要求才能得到 next
                         next = s.charAt(i+1);
-                        if (next!='I') {
+                        if (next=='V' || next=='X') { // IV //IX // II
                             value = -1;
                         }
                     }
-
                     break;
 
                 case 'V':
                     value = 5;
+                    break;
+
+                case 'X': 
+                    value = 10;
 
                     if( i+1 < s.length() ){
                         // 必须符合要求才能得到 next
                         next = s.charAt(i+1);
-                        if (next!='V') {
-                            value = -1;
+                        if (next=='C' || next=='L') { // XC // XL
+                            value = -10;
                         }
                     }
 
-                    break;
-
-                case 'X':
-                    value = 10;
                     break;
 
                 case 'L':
@@ -85,6 +82,15 @@ C 可以放在 D (500) 和 M (1000) 的左边，来表示 400 和 900。
 
                 case 'C':
                     value = 100;
+
+                    if( i+1 < s.length() ){
+                        // 必须符合要求才能得到 next
+                        next = s.charAt(i+1);
+                        if (next=='D' || next=='M') { // CD // CM
+                            value = -100;
+                        }
+                    }
+
                     break;
 
                 case 'D':
@@ -93,6 +99,7 @@ C 可以放在 D (500) 和 M (1000) 的左边，来表示 400 和 900。
 
                 case 'M':
                     value = 1000;
+                    // 没有出现更大单位，所以不修改
                     break;
             
                 default:
