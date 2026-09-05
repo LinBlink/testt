@@ -1,4 +1,4 @@
-package leetcode.a003;
+package leetcode.a003_remove_duplicates_from_sorted_array;
 
 import java.util.Arrays;
 import java.util.HashMap;

@@ -1,4 +1,4 @@
-package learning_points.threadPoolExecutor;
+package learning_points.thread_pool_executor;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

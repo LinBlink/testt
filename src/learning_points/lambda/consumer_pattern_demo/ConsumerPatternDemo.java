@@ -1,4 +1,4 @@
-package learning_points.lambda.ConsumerPatternDemo;
+package learning_points.lambda.consumer_pattern_demo;
 
 import java.util.function.Consumer;
 

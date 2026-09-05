@@ -1,4 +1,4 @@
-package leetcode.a002;
+package leetcode.a002_remove_element;
 
 import java.util.Arrays;
 

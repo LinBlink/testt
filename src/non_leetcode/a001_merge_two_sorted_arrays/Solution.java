@@ -1,4 +1,4 @@
-package non_leetcode.a001合并两个有序数组;
+package non_leetcode.a001_merge_two_sorted_arrays;
 
 import common.Utils;
 import java.util.Arrays;
