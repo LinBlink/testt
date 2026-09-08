@@ -1,4 +1,4 @@
-package leetcode.a006;
+package leetcode.a006_roman_to_integer;
 
 class Solution {
 

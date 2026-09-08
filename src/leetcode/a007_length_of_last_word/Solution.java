@@ -1,4 +1,4 @@
-package leetcode.a007;
+package leetcode.a007_length_of_last_word;
 
 class Solution {
 
