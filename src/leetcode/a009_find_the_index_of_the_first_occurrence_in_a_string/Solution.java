@@ -102,6 +102,12 @@ class Solution {
             char currentChar = pattern.charAt(currentIndex);
             char prefixChar = pattern.charAt(prefixLength);
 
+            /*
+            eg.     a   b   a   b   c   a   b   
+            prefix  0
+            current     1
+            */
+
             // 当前字符能继续扩展已有的前缀匹配
             if (currentChar == prefixChar) {
                 prefixLength++;
