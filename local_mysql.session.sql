@@ -1,2 +1,9 @@
-use test;
-select course, max(score) as maxs, avg(score) as avgs from score GROUP BY course ORDER BY avgs ;
+SELECT
+    u.id,
+    u.name
+FROM users u
+WHERE NOT EXISTS (
+    SELECT 1
+    FROM orders o
+    WHERE o.user_id = u.id
+);
